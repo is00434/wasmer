@@ -1,18 +1,21 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/rust
 {
-	"name": "Wasmer dev environment",
-	"dockerFile": "Dockerfile",
+	"name": "Rust",
+	"image": "mcr.microsoft.com/devcontainers/rust:1-bullseye"
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {
-		"terminal.integrated.shell.linux": "/bin/bash",
-		"lldb.executable": "/usr/bin/lldb"
-	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
 
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"rust-lang.rust-analyzer",
-		"dtsvet.vscode-wasm",
-		"bungcip.better-toml",
-		"vadimcn.vscode-lldb"
-	]
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "rustc --version",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }
